@@ -1,0 +1,179 @@
+{
+	"info": {
+		"_postman_id": "37db2285-acf8-4f94-87b9-cb9162aabc21",
+		"name": "Blog_Backend",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "41656904"
+	},
+	"item": [
+		{
+			"name": "publications",
+			"item": [
+				{
+					"name": "postPublication",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"Tarea de Ejemplo\",\r\n    \"description\": \"Ejemplo\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/blog/v1/publications/postPublication",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"blog",
+								"v1",
+								"publications",
+								"postPublication"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getPublications",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/blog/v1/publications/getPublications?limite=10&desde=0",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"blog",
+								"v1",
+								"publications",
+								"getPublications"
+							],
+							"query": [
+								{
+									"key": "limite",
+									"value": "10"
+								},
+								{
+									"key": "desde",
+									"value": "0"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getPublicationById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/blog/v1/publications/getPublicationById/681105da9acec6c5dadac066",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"blog",
+								"v1",
+								"publications",
+								"getPublicationById",
+								"681105da9acec6c5dadac066"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getPublicationByTitle",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/blog/v1/publications/getPublicationByTitle/Tarea de Autobiografía",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"blog",
+								"v1",
+								"publications",
+								"getPublicationByTitle",
+								"Tarea de Autobiografía"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "putPublication",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"Tarea de Ejemplo update\",\r\n    \"description\": \"Ejemplo update\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/blog/v1/publications/putPublication/6811072c9acec6c5dadac070",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"blog",
+								"v1",
+								"publications",
+								"putPublication",
+								"6811072c9acec6c5dadac070"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deletePublication",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/blog/v1/publications/deletePublication/6811072c9acec6c5dadac070",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"blog",
+								"v1",
+								"publications",
+								"deletePublication",
+								"6811072c9acec6c5dadac070"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
