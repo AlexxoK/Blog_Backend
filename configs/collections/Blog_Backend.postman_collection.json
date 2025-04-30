@@ -343,6 +343,175 @@
 					"response": []
 				}
 			]
+		},
+		{
+			"name": "comments",
+			"item": [
+				{
+					"name": "postComment",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"comment\": \"Ejemplo\",\r\n    \"publication\": \"681105da9acec6c5dadac066\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/blog/v1/comments/postComment",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"blog",
+								"v1",
+								"comments",
+								"postComment"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getComments",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/blog/v1/comments/getComments?limite=10&desde=0",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"blog",
+								"v1",
+								"comments",
+								"getComments"
+							],
+							"query": [
+								{
+									"key": "limite",
+									"value": "10"
+								},
+								{
+									"key": "desde",
+									"value": "0"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getCommentById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/blog/v1/comments/getCommentById/681259fbc4b27cec07409422",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"blog",
+								"v1",
+								"comments",
+								"getCommentById",
+								"681259fbc4b27cec07409422"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getCommentByPublication",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/blog/v1/comments/getCommentByPublication/Tarea de Ejemplo update",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"blog",
+								"v1",
+								"comments",
+								"getCommentByPublication",
+								"Tarea de Ejemplo update"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "putComment",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"comment\": \"GG update\",\r\n    \"publication\": \"6811072c9acec6c5dadac070\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/blog/v1/comments/putComment/681259fbc4b27cec07409422",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"blog",
+								"v1",
+								"comments",
+								"putComment",
+								"681259fbc4b27cec07409422"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteComment",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/blog/v1/comments/deleteComment/681259fbc4b27cec07409422",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"blog",
+								"v1",
+								"comments",
+								"deleteComment",
+								"681259fbc4b27cec07409422"
+							]
+						}
+					},
+					"response": []
+				}
+			]
 		}
 	]
 }

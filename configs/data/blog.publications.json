@@ -20,7 +20,7 @@
   "title": "Tarea de Ejemplo update",
   "description": "Ejemplo update",
   "course": [],
-  "status": false,
+  "status": true,
   "createdAt": {
     "$date": "2025-04-29T17:06:52.161Z"
   },

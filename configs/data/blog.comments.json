@@ -1,0 +1,36 @@
+[{
+  "_id": {
+    "$oid": "681259dcc4b27cec07409420"
+  },
+  "comment": "GG",
+  "publication": [
+    {
+      "$oid": "681105da9acec6c5dadac066"
+    }
+  ],
+  "status": true,
+  "createdAt": {
+    "$date": "2025-04-30T17:11:56.481Z"
+  },
+  "updatedAt": {
+    "$date": "2025-04-30T17:11:56.481Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "681259fbc4b27cec07409422"
+  },
+  "comment": "GG update",
+  "publication": [
+    {
+      "$oid": "6811072c9acec6c5dadac070"
+    }
+  ],
+  "status": false,
+  "createdAt": {
+    "$date": "2025-04-30T17:12:27.507Z"
+  },
+  "updatedAt": {
+    "$date": "2025-04-30T17:38:16.467Z"
+  }
+}]
