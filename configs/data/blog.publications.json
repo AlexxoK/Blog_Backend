@@ -1,30 +1,19 @@
 [{
   "_id": {
-    "$oid": "681105da9acec6c5dadac066"
+    "$oid": "6818c376063b6433baaaf172"
   },
-  "title": "Tarea de Autobiografía",
-  "description": "Realizar una autobiografía desde los 5 años hasta el día de hoy",
-  "course": [],
+  "title": "Blog",
+  "description": "Realizar el frontend de las publicaciones",
+  "course": [
+    {
+      "$oid": "6818c2dc063b6433baaaf16a"
+    }
+  ],
   "status": true,
   "createdAt": {
-    "$date": "2025-04-29T17:01:14.028Z"
+    "$date": "2025-05-05T13:56:06.709Z"
   },
   "updatedAt": {
-    "$date": "2025-04-29T17:01:14.028Z"
-  }
-},
-{
-  "_id": {
-    "$oid": "6811072c9acec6c5dadac070"
-  },
-  "title": "Tarea de Ejemplo update",
-  "description": "Ejemplo update",
-  "course": [],
-  "status": true,
-  "createdAt": {
-    "$date": "2025-04-29T17:06:52.161Z"
-  },
-  "updatedAt": {
-    "$date": "2025-04-29T17:15:08.751Z"
+    "$date": "2025-05-05T13:56:06.709Z"
   }
 }]

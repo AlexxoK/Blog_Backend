@@ -1,10 +1,16 @@
 import { Schema, model } from "mongoose";
 
 const CommentSchema = Schema({
+    author:{
+        type: String,
+        required: [true, "Author is required!"],
+        maxLength: [100, "Max 100 characters!"]
+    },
+
     comment: {
         type: String,
         required: [true, "Comment is required!"],
-        maxLength: 5000,
+        maxLength: [5000, "Max 5000 characters!"]
     },
 
     publication: [

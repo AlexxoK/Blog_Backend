@@ -1,26 +1,39 @@
 [{
   "_id": {
-    "$oid": "6811742a609be9078c36d8f9"
+    "$oid": "6818c2a0063b6433baaaf166"
   },
-  "name": "Curso de Ejemplo update",
-  "status": false,
+  "name": "Tecnología III",
+  "status": true,
   "createdAt": {
-    "$date": "2025-04-30T00:51:54.103Z"
+    "$date": "2025-05-05T13:52:32.702Z"
   },
   "updatedAt": {
-    "$date": "2025-04-30T00:56:19.315Z"
+    "$date": "2025-05-05T13:52:32.702Z"
   }
 },
 {
   "_id": {
-    "$oid": "68117446609be9078c36d8fb"
+    "$oid": "6818c2dc063b6433baaaf16a"
   },
-  "name": "Lengua y Literatura",
+  "name": "Taller III",
   "status": true,
   "createdAt": {
-    "$date": "2025-04-30T00:52:22.665Z"
+    "$date": "2025-05-05T13:53:32.379Z"
   },
   "updatedAt": {
-    "$date": "2025-04-30T00:52:22.665Z"
+    "$date": "2025-05-05T13:53:32.379Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6818c2e8063b6433baaaf16c"
+  },
+  "name": "Práctica Supervisada",
+  "status": true,
+  "createdAt": {
+    "$date": "2025-05-05T13:53:44.667Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-05T13:53:44.667Z"
   }
 }]

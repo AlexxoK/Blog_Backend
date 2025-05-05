@@ -16,7 +16,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"title\": \"Tarea de Ejemplo\",\r\n    \"description\": \"Ejemplo\"\r\n}",
+							"raw": "{\r\n    \"title\": \"Blog\",\r\n    \"description\": \"Realizar el frontend de las publicaciones\",\r\n    \"course\": [\"6818c2dc063b6433baaaf16a\"]\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -125,7 +125,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"title\": \"Tarea de Ejemplo update\",\r\n    \"description\": \"Ejemplo update\"\r\n}",
+							"raw": "{\r\n    \"title\": \"Tarea de Ejemplo update\",\r\n    \"description\": \"Ejemplo update\",\r\n    \"course\": [\"6811742a609be9078c36d8f9\"]\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -185,7 +185,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"name\": \"Lengua y Literatura\"\r\n}",
+							"raw": "{\r\n    \"name\": \"Práctica Supervisada\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -354,7 +354,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"comment\": \"Ejemplo\",\r\n    \"publication\": \"681105da9acec6c5dadac066\"\r\n}",
+							"raw": "{\r\n    \"author\": \"Alex\",\r\n    \"comment\": \"Ya no quiero :(\",\r\n    \"publication\": \"6818c376063b6433baaaf172\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -463,7 +463,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"comment\": \"GG update\",\r\n    \"publication\": \"6811072c9acec6c5dadac070\"\r\n}",
+							"raw": "{\r\n    \"author\": \"Orozco\",\r\n    \"comment\": \"Amo las normas APA\",\r\n    \"publication\": \"6818bbe630f0da69210666b5\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -471,7 +471,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:3000/blog/v1/comments/putComment/681259fbc4b27cec07409422",
+							"raw": "http://localhost:3000/blog/v1/comments/putComment/6818bfce135c5c88d1837fd8",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -482,7 +482,7 @@
 								"v1",
 								"comments",
 								"putComment",
-								"681259fbc4b27cec07409422"
+								"6818bfce135c5c88d1837fd8"
 							]
 						}
 					},
