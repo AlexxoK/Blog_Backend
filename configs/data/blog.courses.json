@@ -1,39 +1,39 @@
 [{
   "_id": {
-    "$oid": "6818c2a0063b6433baaaf166"
+    "$oid": "682149f5647e137cc0492f39"
   },
-  "name": "Tecnología III",
+  "name": "TALLER III",
   "status": true,
   "createdAt": {
-    "$date": "2025-05-05T13:52:32.702Z"
+    "$date": "2025-05-12T01:08:05.298Z"
   },
   "updatedAt": {
-    "$date": "2025-05-05T13:52:32.702Z"
+    "$date": "2025-05-12T01:08:05.298Z"
   }
 },
 {
   "_id": {
-    "$oid": "6818c2dc063b6433baaaf16a"
+    "$oid": "68214a06647e137cc0492f3b"
   },
-  "name": "Taller III",
+  "name": "TECNOLOGÍA III",
   "status": true,
   "createdAt": {
-    "$date": "2025-05-05T13:53:32.379Z"
+    "$date": "2025-05-12T01:08:22.008Z"
   },
   "updatedAt": {
-    "$date": "2025-05-05T13:53:32.379Z"
+    "$date": "2025-05-12T01:08:22.008Z"
   }
 },
 {
   "_id": {
-    "$oid": "6818c2e8063b6433baaaf16c"
+    "$oid": "68214a28647e137cc0492f3d"
   },
-  "name": "Práctica Supervisada",
+  "name": "PRÁCTICA SUPERVISADA",
   "status": true,
   "createdAt": {
-    "$date": "2025-05-05T13:53:44.667Z"
+    "$date": "2025-05-12T01:08:56.634Z"
   },
   "updatedAt": {
-    "$date": "2025-05-05T13:53:44.667Z"
+    "$date": "2025-05-12T01:08:56.634Z"
   }
 }]

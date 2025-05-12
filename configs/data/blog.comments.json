@@ -1,38 +1,17 @@
 [{
   "_id": {
-    "$oid": "6818c431063b6433baaaf176"
-  },
-  "author": "Alexxo",
-  "comment": "Ya llevo avance!",
-  "publication": [
-    {
-      "$oid": "6818c376063b6433baaaf172"
-    }
-  ],
-  "status": true,
-  "createdAt": {
-    "$date": "2025-05-05T13:59:13.391Z"
-  },
-  "updatedAt": {
-    "$date": "2025-05-05T13:59:13.391Z"
-  }
-},
-{
-  "_id": {
-    "$oid": "6818c444063b6433baaaf178"
+    "$oid": "682152cf103f30cd7a46284c"
   },
   "author": "Alex",
-  "comment": "Ya no quiero :(",
-  "publication": [
-    {
-      "$oid": "6818c376063b6433baaaf172"
-    }
-  ],
+  "comment": "Ya no quiero gg",
+  "publication": {
+    "$oid": "68214a64647e137cc0492f42"
+  },
   "status": true,
   "createdAt": {
-    "$date": "2025-05-05T13:59:32.926Z"
+    "$date": "2025-05-12T01:45:51.123Z"
   },
   "updatedAt": {
-    "$date": "2025-05-05T13:59:32.926Z"
+    "$date": "2025-05-12T02:02:06.468Z"
   }
 }]

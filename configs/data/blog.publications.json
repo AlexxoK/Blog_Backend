@@ -1,19 +1,57 @@
 [{
   "_id": {
-    "$oid": "6818c376063b6433baaaf172"
+    "$oid": "68214a64647e137cc0492f42"
   },
   "title": "Blog",
   "description": "Realizar el frontend de las publicaciones",
   "course": [
     {
-      "$oid": "6818c2dc063b6433baaaf16a"
+      "$oid": "682149f5647e137cc0492f39"
     }
   ],
   "status": true,
   "createdAt": {
-    "$date": "2025-05-05T13:56:06.709Z"
+    "$date": "2025-05-12T01:09:56.951Z"
   },
   "updatedAt": {
-    "$date": "2025-05-05T13:56:06.709Z"
+    "$date": "2025-05-12T01:09:56.951Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68214aba647e137cc0492f46"
+  },
+  "title": "Exposición de propuesta",
+  "description": "Realizar una exposición explicando la propuesta",
+  "course": [
+    {
+      "$oid": "68214a06647e137cc0492f3b"
+    }
+  ],
+  "status": true,
+  "createdAt": {
+    "$date": "2025-05-12T01:11:22.450Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-12T01:11:22.450Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68214af0647e137cc0492f4a"
+  },
+  "title": "Evaluación final",
+  "description": "Se calificará con TECNOLOGÍA y TALLER",
+  "course": [
+    {
+      "$oid": "68214a28647e137cc0492f3d"
+    }
+  ],
+  "status": true,
+  "createdAt": {
+    "$date": "2025-05-12T01:12:16.471Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-12T01:16:19.307Z"
   }
 }]

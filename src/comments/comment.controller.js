@@ -16,7 +16,7 @@ export const postComment = async (req, res) => {
         await comment.save();
 
         // Haremos un poblado de varios modelos
-        await comment.populate('publication', 'title').populate({ path: 'publication', populate: { path: 'course', select: 'name' }})
+        await comment.populate({ path: 'publication', select: 'title', populate: { path: 'course', select: 'name'}})
 
         res.status(200).json({
             success: true,
@@ -42,7 +42,7 @@ export const getComments = async (req = request, res = response) => {
             Comment.find(query)
                 .skip(Number(desde))
                 .limit(Number(limite))
-                .populate('publication', 'title').populate({ path: 'publication', populate: { path: 'course', select: 'name' }})
+                .populate({ path: 'publication', select: 'title', populate: { path: 'course', select: 'name'}})
         ])
 
         res.status(200).json({
@@ -65,7 +65,7 @@ export const getCommentById = async (req, res) => {
     try {
         const { id } = req.params;
 
-        const comment = await Comment.findById(id).populate('publication', 'title').populate({ path: 'publication', populate: { path: 'course', select: 'name' }});
+        const comment = await Comment.findById(id).populate({ path: 'publication', select: 'title', populate: { path: 'course', select: 'name'}});
 
         if (!comment) {
             return res.status(404).json({
@@ -122,7 +122,7 @@ export const putComment = async (req, res = response) => {
 
         data.publication = maping._id;
 
-        const comment = await Comment.findByIdAndUpdate(id, data, { new: true }).populate('publication', 'title').populate({ path: 'publication', populate: { path: 'course', select: 'name' }});
+        const comment = await Comment.findByIdAndUpdate(id, data, { new: true }).populate({ path: 'publication', select: 'title', populate: { path: 'course', select: 'name'}});
 
         res.status(200).json({
             success: true,
