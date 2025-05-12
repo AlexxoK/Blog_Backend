@@ -16,7 +16,8 @@ const PublicationSchema = Schema({
     course: [
         {
             type: Schema.Types.ObjectId,
-            ref: 'Course'
+            ref: 'Course',
+            required: [true, "Course is required!"]
         }
     ],
 
