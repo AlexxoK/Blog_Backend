@@ -1,13 +1,22 @@
 import { response, request } from "express";
 import Publication from "./publication.model.js";
+import Course from "../courses/course.model.js";
 
 export const postPublication = async (req, res) => {
     try {
         const data = req.body;
 
+        // Lineas 10 y 12 sirven para poder usar nombres en vez de id's en postman
+        const maping = await Course.find({ name: { $in: data.course } });
+
+        data.course = maping.map(course => course._id);
+
         const publication = new Publication(data);
 
         await publication.save();
+
+        // Línea 19 nos sirve para poder poblar los id's con los datos que queremos, en este caso el name
+        await publication.populate('course', 'name')
 
         res.status(200).json({
             success: true,
@@ -33,10 +42,13 @@ export const getPublications = async (req = request, res = response) => {
             Publication.find(query)
                 .skip(Number(desde))
                 .limit(Number(limite))
+                // En este caso el populate va aquí
+                .populate('course', 'name')
         ])
 
         res.status(200).json({
             success: true,
+            message: 'Publications found!',
             total,
             publications
         })
@@ -54,17 +66,12 @@ export const getPublicationById = async (req, res) => {
     try {
         const { id } = req.params;
 
-        const publication = await Publication.findById(id);
-
-        if (!publication) {
-            return res.status(404).json({
-                success: false,
-                msg: 'Publication not found!'
-            })
-        }
+        // En este caso el populate va aquí
+        const publication = await Publication.findById(id).populate('course', 'name');
 
         res.status(200).json({
             success: true,
+            message: 'Publication found!',
             publication
         })
 
@@ -81,7 +88,7 @@ export const getPublicationByTitle = async (req, res) => {
     try {
         const { title } = req.params;
 
-        const publication = await Publication.findOne({ title });
+        const publication = await Publication.findOne({ title }).populate('course', 'name');
 
         if (!publication) {
             return res.status(404).json({
@@ -92,6 +99,7 @@ export const getPublicationByTitle = async (req, res) => {
 
         res.status(200).json({
             success: true,
+            message: 'Publication found!',
             publication
         });
 
@@ -110,7 +118,12 @@ export const putPublication = async (req, res = response) => {
         const { id } = req.params;
         const data = req.body;
 
-        const publication = await Publication.findByIdAndUpdate(id, data, { new: true });
+        // Sirven para poder usar nombres en vez de id's en postman
+        const maping = await Course.find({ name: { $in: data.course } });
+
+        data.course = maping.map(course => course._id);
+
+        const publication = await Publication.findByIdAndUpdate(id, data, { new: true }).populate('course', 'name');
 
         res.status(200).json({
             success: true,
@@ -133,7 +146,6 @@ export const deletePublication = async (req, res) => {
         const { id } = req.params;
 
         const publication = await Publication.findByIdAndUpdate(id, { status: false }, { new: true });
-
 
         res.status(200).json({
             success: true,
