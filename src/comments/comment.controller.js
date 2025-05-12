@@ -6,9 +6,17 @@ export const postComment = async (req, res) => {
     try {
         const data = req.body;
 
+        // Lineas 10 y 12 sirven para poder usar nombres en vez de id's en postman
+        const maping = await Publication.findOne({ title: data.publication });
+
+        data.publication = maping._id;
+
         const comment = new Comment(data);
 
         await comment.save();
+
+        // Haremos un poblado de varios modelos
+        await comment.populate('publication', 'title').populate({ path: 'publication', populate: { path: 'course', select: 'name' }})
 
         res.status(200).json({
             success: true,
@@ -34,10 +42,12 @@ export const getComments = async (req = request, res = response) => {
             Comment.find(query)
                 .skip(Number(desde))
                 .limit(Number(limite))
+                .populate('publication', 'title').populate({ path: 'publication', populate: { path: 'course', select: 'name' }})
         ])
 
         res.status(200).json({
             success: true,
+            message: 'Comments found!',
             total,
             comments
         })
@@ -55,7 +65,7 @@ export const getCommentById = async (req, res) => {
     try {
         const { id } = req.params;
 
-        const comment = await Comment.findById(id);
+        const comment = await Comment.findById(id).populate('publication', 'title').populate({ path: 'publication', populate: { path: 'course', select: 'name' }});
 
         if (!comment) {
             return res.status(404).json({
@@ -66,6 +76,7 @@ export const getCommentById = async (req, res) => {
 
         res.status(200).json({
             success: true,
+            message: 'Comment found!',
             comment
         })
 
@@ -84,17 +95,11 @@ export const getCommentByPublication = async (req, res) => {
 
         const publication = await Publication.findOne({ title });
 
-        if (!publication) {
-            return res.status(404).json({
-                success: false,
-                msg: 'Publication not found!'
-            });
-        }
-
-        const comments = await Comment.find({ publication: publication._id, status: true });
+        const comments = await Comment.find({ publication: publication._id, status: true }).populate('publication', 'title').populate({ path: 'publication', populate: { path: 'course', select: 'name' }});
 
         res.status(200).json({
             success: true,
+            message: 'Comment found!',
             comments
         });
 
@@ -113,7 +118,11 @@ export const putComment = async (req, res = response) => {
         const { id } = req.params;
         const data = req.body;
 
-        const comment = await Comment.findByIdAndUpdate(id, data, { new: true });
+        const maping = await Publication.findOne({ title: data.publication });
+
+        data.publication = maping._id;
+
+        const comment = await Comment.findByIdAndUpdate(id, data, { new: true }).populate('publication', 'title').populate({ path: 'publication', populate: { path: 'course', select: 'name' }});
 
         res.status(200).json({
             success: true,

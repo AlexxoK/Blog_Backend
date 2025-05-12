@@ -16,7 +16,8 @@ const CommentSchema = Schema({
     publication: [
         {
             type: Schema.Types.ObjectId,
-            ref: 'Publication'
+            ref: 'Publication',
+            required: [true, "Publication is required!"]
         }
     ],
 
