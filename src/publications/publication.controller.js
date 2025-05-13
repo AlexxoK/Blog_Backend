@@ -112,6 +112,36 @@ export const getPublicationByTitle = async (req, res) => {
     }
 };
 
+export const getPublicationsByCourseName = async (req, res) => {
+    try {
+        const { name } = req.params;
+
+        const course = await Course.findOne({ name });
+
+        if (!course) {
+            return res.status(404).json({
+                success: false,
+                msg: 'Course not found!'
+            });
+        }
+
+        const publications = await Publication.find({ course: course._id }).populate('course', 'name');
+
+        res.status(200).json({
+            success: true,
+            msg: 'Publications found!',
+            publications
+        });
+
+    } catch (error) {
+        res.status(500).json({
+            success: false,
+            msg: 'Error getting publications!',
+            error: error.message
+        });
+    }
+};
+
 export const putPublication = async (req, res = response) => {
     try {
 
