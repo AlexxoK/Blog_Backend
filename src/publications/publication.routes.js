@@ -1,7 +1,7 @@
 import { Router } from "express";
 import { check } from "express-validator";
-import { postPublication, getPublications, getPublicationById, getPublicationByTitle, putPublication, deletePublication } from "./publication.controller.js";
-import { idPublicationValid, titlePublicationValid } from "../helpers/db-validator.js";
+import { postPublication, getPublications, getPublicationById, getPublicationByTitle, getPublicationsByCourseName, putPublication, deletePublication } from "./publication.controller.js";
+import { idPublicationValid, titlePublicationValid, nameCourseValid } from "../helpers/db-validator.js";
 import { validarCampos } from "../middlewares/validar-campos.js";
 
 const router = Router();
@@ -29,11 +29,19 @@ router.get(
 router.get(
     "/getPublicationByTitle/:title",
     [
-        check("id", "id invalid!").isMongoId(),
-        check("id").custom(titlePublicationValid),
+        check("title").custom(titlePublicationValid),
         validarCampos
     ],
     getPublicationByTitle
+)
+
+router.get(
+    "/getPublicationsByCourseName/:name",
+    [
+        check("name").custom(nameCourseValid),
+        validarCampos
+    ],
+    getPublicationsByCourseName
 )
 
 router.put(
