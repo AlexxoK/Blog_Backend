@@ -16,7 +16,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"title\": \"Evaluación final\",\r\n    \"description\": \"Realizar la propuesta que se realizó en TECNOLOGÍA III\",\r\n    \"course\": [\"TALLER III\"]\r\n}",
+							"raw": "{\r\n    \"title\": \"Evaluación\",\r\n    \"description\": \"Realizar la propuesta que se realizó en TECNOLOGÍA III\",\r\n    \"course\": [\"TALLER III\"]\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
