@@ -1,17 +1,68 @@
 [{
   "_id": {
-    "$oid": "682152cf103f30cd7a46284c"
+    "$oid": "68256415118229252824d4a8"
   },
-  "author": "Alex",
-  "comment": "Ya no quiero gg",
+  "author": "AlexxoK",
+  "comment": "First comment for publication Práctica Supervisada",
   "publication": {
-    "$oid": "68214a64647e137cc0492f42"
+    "$oid": "682563b5118229252824d496"
   },
   "status": true,
   "createdAt": {
-    "$date": "2025-05-12T01:45:51.123Z"
+    "$date": "2025-05-15T03:48:37.976Z"
   },
   "updatedAt": {
-    "$date": "2025-05-12T02:02:06.468Z"
+    "$date": "2025-05-15T03:48:37.976Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6825642a118229252824d4b0"
+  },
+  "author": "AlexxoK",
+  "comment": "First comment for publication Tecnología",
+  "publication": {
+    "$oid": "682563d3118229252824d49a"
+  },
+  "status": true,
+  "createdAt": {
+    "$date": "2025-05-15T03:48:58.155Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-15T03:48:58.155Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68256436118229252824d4b8"
+  },
+  "author": "AlexxoK",
+  "comment": "First comment for publication Taller",
+  "publication": {
+    "$oid": "682563f7118229252824d4a1"
+  },
+  "status": true,
+  "createdAt": {
+    "$date": "2025-05-15T03:49:10.355Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-15T03:49:10.355Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68267000459f25dc3cab310d"
+  },
+  "author": "AlexxoK",
+  "comment": "Ya estamos en eso!",
+  "publication": {
+    "$oid": "68266cf1a5db1df77827b5f9"
+  },
+  "status": true,
+  "createdAt": {
+    "$date": "2025-05-15T22:51:44.154Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-15T22:51:44.154Z"
   }
 }]

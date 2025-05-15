@@ -1,47 +1,9 @@
 [{
   "_id": {
-    "$oid": "68214a64647e137cc0492f42"
+    "$oid": "682563b5118229252824d496"
   },
-  "title": "Blog",
-  "description": "Realizar el frontend de las publicaciones",
-  "course": [
-    {
-      "$oid": "682149f5647e137cc0492f39"
-    }
-  ],
-  "status": true,
-  "createdAt": {
-    "$date": "2025-05-12T01:09:56.951Z"
-  },
-  "updatedAt": {
-    "$date": "2025-05-12T01:09:56.951Z"
-  }
-},
-{
-  "_id": {
-    "$oid": "68214aba647e137cc0492f46"
-  },
-  "title": "Exposición de propuesta",
-  "description": "Realizar una exposición explicando la propuesta",
-  "course": [
-    {
-      "$oid": "68214a06647e137cc0492f3b"
-    }
-  ],
-  "status": true,
-  "createdAt": {
-    "$date": "2025-05-12T01:11:22.450Z"
-  },
-  "updatedAt": {
-    "$date": "2025-05-12T01:11:22.450Z"
-  }
-},
-{
-  "_id": {
-    "$oid": "68214af0647e137cc0492f4a"
-  },
-  "title": "Evaluación final",
-  "description": "Se calificará con TECNOLOGÍA y TALLER",
+  "title": "Publication Práctica Supervisada",
+  "description": "Description for publication Práctica Supervisada",
   "course": [
     {
       "$oid": "68214a28647e137cc0492f3d"
@@ -49,9 +11,72 @@
   ],
   "status": true,
   "createdAt": {
-    "$date": "2025-05-12T01:12:16.471Z"
+    "$date": "2025-05-15T03:47:01.743Z"
   },
   "updatedAt": {
-    "$date": "2025-05-12T01:16:19.307Z"
+    "$date": "2025-05-15T03:47:01.743Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "682563d3118229252824d49a"
+  },
+  "title": "Publication Tecnología",
+  "description": "Description for publication Tecnología",
+  "course": [
+    {
+      "$oid": "68214a06647e137cc0492f3b"
+    }
+  ],
+  "status": true,
+  "createdAt": {
+    "$date": "2025-05-15T03:47:31.386Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-15T03:47:31.386Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "682563f7118229252824d4a1"
+  },
+  "title": "Publication Taller",
+  "description": "Description for publication Taller",
+  "course": [
+    {
+      "$oid": "682149f5647e137cc0492f39"
+    }
+  ],
+  "status": true,
+  "createdAt": {
+    "$date": "2025-05-15T03:48:07.429Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-15T03:48:07.429Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68266cf1a5db1df77827b5f9"
+  },
+  "title": "Aviso!",
+  "description": "Hacer todas las tareas de los tres cursos jovénes!",
+  "course": [
+    {
+      "$oid": "682149f5647e137cc0492f39"
+    },
+    {
+      "$oid": "68214a06647e137cc0492f3b"
+    },
+    {
+      "$oid": "68214a28647e137cc0492f3d"
+    }
+  ],
+  "status": true,
+  "createdAt": {
+    "$date": "2025-05-15T22:38:41.222Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-15T22:38:41.222Z"
   }
 }]

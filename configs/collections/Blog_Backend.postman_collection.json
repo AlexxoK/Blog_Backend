@@ -16,7 +16,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"title\": \"Evaluación final\",\r\n    \"description\": \"Aquí no debe subir nada\",\r\n    \"course\": [\"PRÁCTICA SUPERVISADA\"]\r\n}",
+							"raw": "{\r\n    \"title\": \"Aviso!\",\r\n    \"description\": \"Hacer todas las tareas de los tres cursos jovénes!\",\r\n    \"course\": [\"TALLER III\", \"TECNOLOGÍA III\", \"PRÁCTICA SUPERVISADA\"]\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -90,6 +90,29 @@
 								"publications",
 								"getPublicationById",
 								"68214af0647e137cc0492f4a"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getPublicationsByCourseName",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/blog/v1/publications/getPublicationsByCourseName/TALLER III",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"blog",
+								"v1",
+								"publications",
+								"getPublicationsByCourseName",
+								"TALLER III"
 							]
 						}
 					},
